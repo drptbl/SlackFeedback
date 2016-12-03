@@ -100,7 +100,7 @@ import ScreenRecord
 
         UIGraphicsBeginImageContextWithOptions(view.bounds.size, false, 0.0)
         view.drawViewHierarchyInRect(view.bounds, afterScreenUpdates: true)
-        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()
+        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
 
         let viewController: FeedbackSlackViewController = FeedbackSlackViewController.instantitate()
